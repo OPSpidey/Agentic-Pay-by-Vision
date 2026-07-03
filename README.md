@@ -18,19 +18,25 @@ An advanced, edge-optimized multimodal AI system built to automate the entire in
 ## 🔄 Process Flow & System Architecture
 
 The platform operates on a decoupled, async **Perceive ➔ Reason ➔ Execute** architecture pipeline:
-PERCEIVE LAYER ───> Image Normalization & Deskewing (OpenCV)
+PERCEIVE LAYER
+              
+              ───> Image Normalization & Deskewing (OpenCV)
 
-              ────> Text & Bounding Box Coordinates Extraction (OCR Engine)
+              ───> Text & Bounding Box Coordinates Extraction (OCR Engine)
                               │
                               ▼
 
-REASON LAYER   ───> Semantic Token Parsing & Line-Item Classification (SLM Agent)
+REASON LAYER   
 
-              ────> Cross-Reference Vendor Directory & Compute Fraud Checks (DB Vector Match)
+              ───> Semantic Token Parsing & Line-Item Classification (SLM Agent)
+
+              ───> Cross-Reference Vendor Directory & Compute Fraud Checks (DB Vector Match)
                               │
                               ▼
 
-EXECUTE LAYER  ───> Assemble Structured JSON Payment Voucher (IFSC/UPI, Amount, GST)
+EXECUTE LAYER  
+
+              ───> Assemble Structured JSON Payment Voucher (IFSC/UPI, Amount, GST)
 
               ───> Trigger Bank Transaction Gateway API Hook & Render One-Click UI Popup
 
