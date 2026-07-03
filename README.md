@@ -18,6 +18,7 @@ An advanced, edge-optimized multimodal AI system built to automate the entire in
 ## 🔄 Process Flow & System Architecture
 
 The platform operates on a decoupled, async **Perceive ➔ Reason ➔ Execute** architecture pipeline:
+
 PERCEIVE LAYER
               
               ───> Image Normalization & Deskewing (OpenCV)
